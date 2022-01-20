@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 211989810}
   - component: {fileID: 211989809}
   - component: {fileID: 211989808}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.006757736, y: 0}
+  m_Offset: {x: 0.0002770722, y: -0.123991996}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -162,7 +162,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0135155, y: 1}
+  m_Size: {x: 1.0005538, y: 0.752016}
   m_EdgeRadius: 0
 --- !u!212 &211989809
 SpriteRenderer:
@@ -221,8 +221,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 211989807}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.855, y: -3.57, z: 0}
-  m_LocalScale: {x: 9.125328, y: 1, z: 1}
+  m_LocalPosition: {x: -4.738, y: -3.537, z: 0}
+  m_LocalScale: {x: 9.354868, y: 1.0668, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -230,6 +230,12 @@ Transform:
 --- !u!1 &1324456075 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8525867462258663051, guid: 1571be3f9f8da364ebed00ac439eac04,
+    type: 3}
+  m_PrefabInstance: {fileID: 4005072446703484182}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1324456076 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9103907646250888521, guid: 1571be3f9f8da364ebed00ac439eac04,
     type: 3}
   m_PrefabInstance: {fileID: 4005072446703484182}
   m_PrefabAsset: {fileID: 0}
@@ -280,6 +286,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6473512, y: 2.26362}
   m_EdgeRadius: 0
+--- !u!114 &1324456081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324456075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 687cf510d76dfae4f8ca459d65550860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1324456076}
 --- !u!1 &1832931811
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,6 +393,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8525867462258663051, guid: 1571be3f9f8da364ebed00ac439eac04,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3795874281404039368, guid: 1571be3f9f8da364ebed00ac439eac04,
         type: 3}
