@@ -29,25 +29,19 @@ public class PlayerController : MonoBehaviour
     }
     private void MoveCharacter(float speed1 , float vertical) 
     {
-
         /* move Horizontally*/
         Vector3 position = transform.position;
         position.x += speed1 * speed * Time.deltaTime;
         transform.position = position;
 
+        /*move vertical*/
 
         if (vertical > 0)
         {
             Rgd2D.AddForce(new Vector2(0f, jump), ForceMode2D.Force);
         }
 
-
-
-
-
     }
-
-
     private void PlayMovementAnimation(float speed1, float vertical)
     {
         animator.SetFloat("Speed", Mathf.Abs(speed1));
@@ -61,25 +55,22 @@ public class PlayerController : MonoBehaviour
         {
             scale.x = Mathf.Abs(scale.x);
         }
-        transform.localScale = scale;  
+        transform.localScale = scale;
 
-         /*jumpping*/
+        /*jumpping*/
+
         if (vertical > 0)
         {
-            animator.SetBool ("Jump", true);
-           
-        }else
+            animator.SetBool("Jump", true);
+
+        }
+        else
         {
             animator.SetBool("Jump", false);
         }
-      
-
-
-
 
         Vector3 localscale = transform.localScale;
         
-       
             Running = Input.GetKey(KeyCode.LeftShift);
             Crouch = Input.GetKey(KeyCode.LeftControl);
             animator.SetBool("Bool", Running);
